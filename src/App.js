@@ -3,16 +3,19 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home.js';
 import About from './About.js';
 import Contact from './Contact.js';
+import './assets/styles/App.css'
+import DropDownList from './Components/DropDownList.js';
 
 export default function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <nav>
+          <nav style = {{ height: '20px'}}>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
+              <li><Link to="/about">Industries</Link></li>
+                <DropDownList />
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
