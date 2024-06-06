@@ -1,48 +1,33 @@
-import './assets/styles/App.css';
-import React, { useState } from 'react';
-import { useStockData} from './api.js';
-import StockTable from './Components/StockTable.js';
-import SearchBar from './Components/SearchBar.js';
-import Header from './Components/Header.js';
-import Footer from './Components/Footer.js';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
 
 export default function App() {
-    const [search, setSearch] = useState("");  
-    const {loading, stockData, error} = useStockData(search);
-    
-  
-    if (loading) {
-      return <p>Loading...</p>;
-    }
-    if (error) {
-      return <p>Something went wrong: {error.message}</p>;
-    }
-
-    return (
-      
-        <div className="App">
-        <Header/>
-
-          <div class="container-fluid p-5 my-5 bg-dark text-white">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Symbol</th>
-                  <th>Industry<div class="container-fluid">
-                    <SearchBar onSubmit={setSearch} /></div></th>
-                </tr>
-              </thead>
-              <tbody>
-                {stockData.map((stock) => (<StockTable name={stock.name} 
-                symbol={stock.symbol} industry={stock.industry} />))}
-              </tbody>
-            </table>
-          </div>
-          <div>
-            <Footer/>
-          </div>
-        </div>        
-    );
-  }
-
+  return (
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <nav>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </nav>
+        </header>
+        <main className="App-main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <footer className="App-footer">
+          <p>&copy; 2024 My Website. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
+  );
+}
