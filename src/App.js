@@ -11,11 +11,11 @@ export default function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <nav style = {{ height: '20px'}}>
+          <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">Industries</Link></li>
-                <DropDownList />
+                <ul><DropDownList /></ul>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>

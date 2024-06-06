@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 const API_KEY = '1oeViSb1Ke71OdGDjnuVF2G8pYJbOmtb313DyxUL';
 
 // Get all data from API
@@ -50,7 +51,7 @@ export default function DropDownList() {
     return (
     <ul>
         {industries.map((industry) => (
-            <li>{industry}</li>
+            <li><Link to='/'>{industry}</Link></li>
         ))}
     </ul>
     )
