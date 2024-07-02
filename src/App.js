@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home.js';
 import StockExplorer from './StockExplorer.js';
 import AboutContact from './AboutContact.js';
-import './assets/styles/App.css'
-import DropDownList from './Components/DropDownList.js';
+import './assets/styles/App.css';
 
 export default function App() {
   return (
