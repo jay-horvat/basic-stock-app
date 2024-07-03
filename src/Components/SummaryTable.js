@@ -22,6 +22,7 @@ if (!historyData || historyData.length === 0) {
   return (
     <Table striped bordered hover>
         <thead colSpan={2} centre>Summary Table</thead>
+        <tr><td>Stock Name</td><td>{historyData[0].name} ({historyData[0].symbol})</td></tr>
         <tr><td>Highest Close Price</td><td>$ {maxClosePrice}</td></tr>
         <tr><td>Lowest Close Price</td><td>$ {minClosePrice}</td></tr>
         <tr><td>Percentage growth:</td><td>{percentGrowth.toFixed(2)} %</td></tr>

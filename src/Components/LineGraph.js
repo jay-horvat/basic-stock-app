@@ -13,18 +13,22 @@ Chart.register(
 );
 
 const LineGraph = ({historyData}) => {
+  if (!historyData) {
+    return null; // or render a loading indicator or handle the loading state
+  }
 
   const datesArray = historyData.map(({ timestamp }) => timestamp);
   const priceArray = historyData.map(({ close }) => close);
+
   
   datesArray.reverse();
 
   const chartData = {
-    labels: datesArray,  
+    labels: datesArray,
     datasets: [
       {
         label: 'Stock Price',
-        data: priceArray,  
+        data: priceArray,
         fill: false,
         backgroundColor: 'rgba(250,250,250,1)',
         borderColor: 'rgba(2,2,1,1)',

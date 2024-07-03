@@ -8,8 +8,6 @@ import slideTwoImage from './assets/images/slidetwo.webp';
 import slideThreeImage from './assets/images/slidethree.webp';
 import welcomeImage from './assets/images/welcome.png';
 
-
-
 function Home() {
   return (
     <div>
@@ -19,14 +17,14 @@ function Home() {
         }}>
         <img className="d-block w-100 header-image"
             src={welcomeImage}
-            alt="First slide" style = {{borderRadius: '30px'}}
+            alt="welcome banner" style = {{borderRadius: '30px'}}
             />
       </div>
       <div className="carousel-container mt-4"
       style={{
         height: '400px',
-        border: '1px solid #ddd',   // Border color and thickness
-        borderRadius: '8px',        // Border radius for rounded corners
+        border: '1px solid #ddd',   
+        borderRadius: '8px',        
       }}> 
         <Carousel>
           <Carousel.Item>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home.js';
+import Footer from './Components/Footer.js';
 import StockExplorer from './StockExplorer.js';
 import AboutContact from './AboutContact.js';
 import './assets/styles/App.css';
@@ -25,9 +26,7 @@ export default function App() {
             <Route path="/aboutcontact" element={<AboutContact />} />
           </Routes>
         </main>
-        <footer className="App-footer">
-          <p>&copy; 2024 My Website. All rights reserved.</p>
-        </footer>
+        <Footer/>
       </div>
     </Router>
   );
