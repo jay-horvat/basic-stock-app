@@ -19,7 +19,6 @@ export function useCompareHistoryData(symbol, date) {
         } else {
           data = await getHistoryStockData(symbol);
         }
-
         setCompareHistoryData(data);
         setCompareHistoryLoading(false);
       } catch (error) {
@@ -59,10 +58,12 @@ async function fetchData(endpoint) {
     }
   };
 
-  const response = await fetch(url, options);
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+  let res = await fetch(url, options);
+  if (!res.ok) {
+    throw new Error(`HTTP error! status: ${res.status}`);
   }
 
-  return response.json();
+  let stocks = await res.json();
+
+  return stocks;
 }

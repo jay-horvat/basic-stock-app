@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import {useState} from 'react';
 // API key
 const API_KEY = '1oeViSb1Ke71OdGDjnuVF2G8pYJbOmtb313DyxUL';
+const baseUrl = "https://aij1hx90oj.execute-api.ap-southeast-2.amazonaws.com/prod/";
 
 // Function that returns appropriate data to App.js
 export function useHistoryData (symbol, date) {
@@ -11,23 +12,25 @@ export function useHistoryData (symbol, date) {
 
     //Asynchronously assign values to setLoading, setStockData and setError based on updated values of search.
     useEffect(() => {
-            if (!symbol) return;
+        const fetchHistoryData = async () => {
+            try {
+                if (!symbol) return;
         
-            (async () => {
-                try {
                     let data;
-                    // Based on if there is a search term for industry, load appropriate data.
                     if (date) {
-                        data = await getSpecificHistoryStockData(symbol, date);}
-                    else {
-                        data = await getHistoryStockData(symbol);}
+                        data = await getSpecificHistoryStockData(symbol, date);
+                    } else {
+                        data = await getHistoryStockData(symbol);
+                    }
                     setHistoryData(data);
                     setLoading(false);
                 } catch (err) {
                     setError(err);
                     setLoading(false);
                 }
-            })();
+            };
+
+            fetchHistoryData();
         }, [symbol, date]);
 
     return {
@@ -37,34 +40,18 @@ export function useHistoryData (symbol, date) {
     }
 }
 
-//Fetch stock data from a certain date
+//Fetch stock data from a certain stock
 async function getHistoryStockData (symbol) {
-    const baseUrl = "https://aij1hx90oj.execute-api.ap-southeast-2.amazonaws.com/prod/";
     const endpoint = `history?symbol=${symbol}`;
+    return fetchData(endpoint);}
 
-    const url = `${baseUrl}${endpoint}`;
-
-    const options = {
-        method: 'GET',
-        headers: {
-            'Content-Type' : 'application/json',
-            'x-api-key' : API_KEY
-        }
-    }
-
-    let res = await fetch(url, options);
-    if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
-    }
-    let stocks = await res.json();
-
-    return stocks;
-}
-//Fetch all stock data
+//Fetch stock data with symbol and date
 async function getSpecificHistoryStockData (symbol, date) {
-    const baseUrl = "https://aij1hx90oj.execute-api.ap-southeast-2.amazonaws.com/prod/";
     const endpoint = `history?symbol=${symbol}&from=${date}`;
+    return fetchData(endpoint);}
 
+//generic getching function
+async function fetchData(endpoint) {
     const url = `${baseUrl}${endpoint}`;
 
     const options = {
@@ -73,7 +60,7 @@ async function getSpecificHistoryStockData (symbol, date) {
             'Content-Type' : 'application/json',
             'x-api-key' : API_KEY
         }
-    }
+    };
 
     let res = await fetch(url, options);
     if (!res.ok) {
@@ -83,3 +70,4 @@ async function getSpecificHistoryStockData (symbol, date) {
 
     return stocks;
 }
+
