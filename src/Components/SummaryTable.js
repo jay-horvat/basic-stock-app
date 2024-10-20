@@ -13,6 +13,7 @@ if (!historyData || historyData.length === 0) {
     return history.close > max ? history.close : max;
   }, -Infinity);
 
+  // Calculate minimum close price
   const minClosePrice = historyData.reduce((min, history) => {
     return history.close < min ? history.close : min;
   }, Infinity);

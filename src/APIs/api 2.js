@@ -55,3 +55,6 @@ async function getInitialStockData () {
         industry: stock.industry,
     }))
 }
+
+//Potential upgrades:
+// fix case sensitive, respond to "enter", error of "industry doesnt exist" and then return base data. 

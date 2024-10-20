@@ -14,7 +14,7 @@ Chart.register(
 
 const LineGraph = ({historyData}) => {
   if (!historyData) {
-    return null; // or render a loading indicator or handle the loading state
+    return null; 
   }
 
   const datesArray = historyData.map(({ timestamp }) => timestamp);
