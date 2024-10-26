@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/basic-stock-app/static/css/main.5716dd67.css",
-    "main.js": "/basic-stock-app/static/js/main.fcad78dc.js",
-    "static/js/453.53bf04f1.chunk.js": "/basic-stock-app/static/js/453.53bf04f1.chunk.js",
-    "static/media/welcome.png": "/basic-stock-app/static/media/welcome.76783a868a70b34f5aff.png",
-    "static/media/slidethree.webp": "/basic-stock-app/static/media/slidethree.16a133be817456bf1cc1.webp",
-    "static/media/slideone.jpg": "/basic-stock-app/static/media/slideone.a89307700f19679f14bc.jpg",
-    "static/media/slidetwo.webp": "/basic-stock-app/static/media/slidetwo.36caa5c985db432077dc.webp",
-    "index.html": "/basic-stock-app/index.html",
-    "main.5716dd67.css.map": "/basic-stock-app/static/css/main.5716dd67.css.map",
-    "main.fcad78dc.js.map": "/basic-stock-app/static/js/main.fcad78dc.js.map",
-    "453.53bf04f1.chunk.js.map": "/basic-stock-app/static/js/453.53bf04f1.chunk.js.map"
+    "main.css": "/basic-stock-app/home/static/css/main.5716dd67.css",
+    "main.js": "/basic-stock-app/home/static/js/main.0aa20979.js",
+    "static/js/453.53bf04f1.chunk.js": "/basic-stock-app/home/static/js/453.53bf04f1.chunk.js",
+    "static/media/welcome.png": "/basic-stock-app/home/static/media/welcome.76783a868a70b34f5aff.png",
+    "static/media/slidethree.webp": "/basic-stock-app/home/static/media/slidethree.16a133be817456bf1cc1.webp",
+    "static/media/slideone.jpg": "/basic-stock-app/home/static/media/slideone.a89307700f19679f14bc.jpg",
+    "static/media/slidetwo.webp": "/basic-stock-app/home/static/media/slidetwo.36caa5c985db432077dc.webp",
+    "index.html": "/basic-stock-app/home/index.html",
+    "main.5716dd67.css.map": "/basic-stock-app/home/static/css/main.5716dd67.css.map",
+    "main.0aa20979.js.map": "/basic-stock-app/home/static/js/main.0aa20979.js.map",
+    "453.53bf04f1.chunk.js.map": "/basic-stock-app/home/static/js/453.53bf04f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5716dd67.css",
-    "static/js/main.fcad78dc.js"
+    "static/js/main.0aa20979.js"
   ]
 }
