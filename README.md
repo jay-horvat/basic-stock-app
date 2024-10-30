@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Stock Market App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="./src/assets/logo.png" alt="Stock Market App Logo" width="300" height="auto">
+</p>
 
-## Available Scripts
+The **Stock Market App** is a front-end web application built with **React** and **JavaScript**. It allows users to access and explore stock data by leveraging third-party APIs, displaying the information in a searchable and filterable table format. Users can adjust the API queries for different endpoints, enabling customized views of the data according to their preferences.
 
-In the project directory, you can run:
+The Stock Market App serves two main purposes:
 
-### `npm start`
+1) To demonstrate my skills in front-end development, API integration, and data visualization in React.
+2) To provide an accessible and functional stock exploration tool for users interested in monitoring stock data and trends.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As this project is primarily built for learning and showcasing purposes, instructions on hosting and deploying the application are not included.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Installation](#installation)
+- [Contact](#contact)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About the Project
 
-### `npm run build`
+The Stock Market App is a simple, user-friendly application that retrieves stock data from a third-party API and presents it in a dynamic, interactive table. Users can search, filter, and adjust their views by selecting different endpoints, allowing them to explore various stock metrics and historical data as per their needs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Front End
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The front end of the Stock Market App is developed with **React** and **JavaScript**. It incorporates an organized component structure and a responsive layout, designed to handle and display real-time stock data from API calls. The following front-end features enhance usability and data interaction:
 
-### `npm run eject`
+- **Data Retrieval**: APIs connect to a third-party stock data provider, retrieving current and historical data on selected stocks.
+- **Interactive Table**: Stock data is displayed in a customizable table format that allows users to search and filter based on specific stock symbols, time frames, or other criteria.
+- **Dynamic API Queries**: The app adjusts API queries to fetch different endpoints, allowing users to access a range of stock information such as price history, performance comparisons, and more.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Through the use of this setup, the application offers a seamless data exploration experience, empowering users with flexibility and control over the stock data they view.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To get a local copy up and running, follow these simple steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/stock-market-app.git
 
-## Learn More
+2. **Navigate to the project directory**
+'cd stock-market-app'
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Install dependencies**
+Run the following command to install all necessary npm packages:
+'npm install'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Start the application**
+After the dependencies are installed, you can start the app with:
 
-### Code Splitting
+'npm start'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This will run the app in development mode. Open http://localhost:3000 to view it in your browser.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For more information, feel free to reach out to me at jaydhorvat@gmail.com or visit [my portfolio website](https://jay-horvat.github.io/) for more information on my background, education, experience, and alternative contact options.

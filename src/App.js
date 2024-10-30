@@ -8,12 +8,12 @@ import './assets/styles/App.css';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/basic-stock-app">
       <div className="App">
         <header className="App-header">
           <nav>
             <ul>
-              <li><Link to="/home">Home</Link></li>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/stockexplorer">Stock Explorer</Link></li>
               <li><Link to="/aboutcontact">About Stock Spotter</Link></li>
             </ul>
@@ -21,7 +21,7 @@ export default function App() {
         </header>
         <main className="App-main">
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/stockexplorer" element={<StockExplorer />} />
             <Route path="/aboutcontact" element={<AboutContact />} />
           </Routes>

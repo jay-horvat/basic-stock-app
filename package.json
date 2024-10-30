@@ -1,7 +1,7 @@
 {
   "name": "stock-market-app",
   "version": "0.1.0",
-  "homepage": "https://jay-horvat.github.io/basic-stock-app/home",
+  "homepage": "https://jay-horvat.github.io/basic-stock-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
