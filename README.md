@@ -1,7 +1,7 @@
 # Stock Market App
 
 <p align="center">
-  <img src="./src/assets/logo.png" alt="Stock Market App Logo" width="300" height="auto">
+  <img src="./src/assets/images/welcome.png" alt="Stock Market Welcome" width="300" height="auto">
 </p>
 
 The **Stock Market App** is a front-end web application built with **React** and **JavaScript**. It allows users to access and explore stock data by leveraging third-party APIs, displaying the information in a searchable and filterable table format. Users can adjust the API queries for different endpoints, enabling customized views of the data according to their preferences.
