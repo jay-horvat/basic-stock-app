@@ -45,16 +45,18 @@ To get a local copy up and running, follow these simple steps:
    git clone https://github.com/your-username/stock-market-app.git
 
 2. **Navigate to the project directory**
-'cd stock-market-app'
+    ```bash
+    cd stock-market-app
 
 3. **Install dependencies**
 Run the following command to install all necessary npm packages:
-'npm install'
+    ```bash
+    'npm install'
 
 4. **Start the application**
 After the dependencies are installed, you can start the app with:
-
-'npm start'
+    ```bash
+    'npm start'
 
 This will run the app in development mode. Open http://localhost:3000 to view it in your browser.
 
